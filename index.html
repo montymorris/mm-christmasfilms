@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+<p class="p1">&lt;title&gt;Animated films timeline, 1993–2024&lt;/title&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1">&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--canvas:#111214;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--sprocket:#0a0a0b;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--paper:#EFE9DC;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>*{box-sizing:border-box;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>html,body{margin:0;padding:0;background:var(--canvas);}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'JetBrains Mono',monospace;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:28px 28px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:var(--paper);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom:18px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead .kicker{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:.35em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#8a8a84;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:0 0 6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead h1{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'Anton',sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight:400;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:clamp(28px,4vw,44px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:.02em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:var(--paper);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.masthead h2{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:Futura,'Futura PT','Century Gothic',sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:20px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.filmstrip{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content:space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:0 2px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin:14px 0 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.filmstrip span{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:9px;height:9px;border-radius:50%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:var(--canvas);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border:1.5px solid #4a4a46;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.reel{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background:var(--sprocket);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:14px 14px 4px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius:4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.grid{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns:repeat(5,1fr);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap:10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>aspect-ratio:1/1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius:3px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow:hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display:flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-direction:column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content:space-between;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.poster-img{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>inset:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width:100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height:100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>object-fit:cover;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>z-index:0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell .num,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell .title,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell .sub{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position:relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>z-index:1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo .num,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo .title,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo .sub{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-shadow:0 1px 3px rgba(0,0,0,.7);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition:opacity .2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo .poster-img{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition:opacity .2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo:hover .title,</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo:hover .sub{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.cell.has-photo:hover .poster-img{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:.55;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.num{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'JetBrains Mono',monospace;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight:700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:.05em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:.85;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.title{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'Anton',sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight:400;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height:1.08;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:.01em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.sub{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family:'JetBrains Mono',monospace;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:8.5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:.08em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity:.8;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top:3px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.footer{</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align:center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:#6f6f6a;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size:10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing:.15em;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform:uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top:16px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media (max-width:640px){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body{padding:16px 12px 28px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid{grid-template-columns:repeat(3,1fr);gap:6px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.reel{padding:10px 10px 4px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cell{padding:7px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.title{font-size:10.5px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sub{font-size:7.5px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead h1{font-size:22px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.masthead .kicker{font-size:9px;}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.filmstrip span{width:6px;height:6px;}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="masthead"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Animated films&lt;/h1&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="masthead"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;A selection by Monty Morris&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="reel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid" id="grid"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const films = [</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:1,t:"Nativity",y:"2009",bg:"#8C2F39",fg:"#F6E6D2"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:2,t:"Elf",y:"2003",bg:"#2F6B3A",fg:"#F4EBD0"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:3,t:"The Christmas Chronicles",y:"2018",bg:"#A62F28",fg:"#F6E2C8"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:4,t:"The Christmas Chronicles 2",y:"2020",bg:"#1E3F66",fg:"#E4EFFA"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:5,t:"The Nightmare Before Christmas",y:"1993",bg:"#2A1B3D",fg:"#E8DCF2"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:6,t:"The Snowman",y:"1982",bg:"#7EC8E3",fg:"#0E3A4A"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:7,t:"Home Alone",y:"1990",bg:"#B8452A",fg:"#F6E9D6"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:8,t:"The Princess Switch",y:"2018",bg:"#7B4FA3",fg:"#EEE3F5"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:9,t:"Home Alone 2: Lost in New York",y:"1992",bg:"#1B3A4B",fg:"#DCEAF2"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:10,t:"The Princess Switched Again",y:"2020",bg:"#5C3A82",fg:"#EEE3F5"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:11,t:"Dr Seuss' The Grinch",y:"2018",bg:"#6B8E4E",fg:"#F1F5E6"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:12,t:"Nativity 2: Danger in the Manger",y:"2012",bg:"#C9622A",fg:"#F7E4CE"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:13,t:"Die Hard",y:"1988",bg:"#1F1F22",fg:"#EFE9DC"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:14,t:"A Boy Called Christmas",y:"2021",bg:"#2E7D7D",fg:"#EAF6F2"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:15,t:"Die Hard 2",y:"1990",bg:"#3D4A5A",fg:"#E4ECF5"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:16,t:"Love Actually",y:"2003",bg:"#D6455D",fg:"#FCEBC8"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:17,t:"Die Hard with a Vengeance",y:"1995",bg:"#5F3E20",fg:"#F3E6D2"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:18,t:"Nativity 3: Dude, Where's My Donkey",y:"2014",bg:"#B98A4F",fg:"#2A1E0E"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:19,t:"Live Free or Die Hard",y:"2007",bg:"#12384A",fg:"#D8E7EF"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:20,t:"The Man Who Invented Christmas",y:"2017",bg:"#6E4A28",fg:"#F3E6D2"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:21,t:"Spirited",y:"2022",bg:"#F0C419",fg:"#2A2210"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:22,t:"A Good Day to Die Hard",y:"2013",bg:"#3A3A3E",fg:"#E8E8E4"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:23,t:"A Christmas Carol (Disney)",y:"2009",bg:"#3A5A78",fg:"#DCE7F0"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:24,t:"The Polar Express",y:"2004",bg:"#8A1F2B",fg:"#F6E2C8"},</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{n:25,t:"Arthur Christmas",y:"2011",bg:"#F2C744",fg:"#2A2210"}</p>
+<p class="p1">];</p>
+<p class="p2"><br></p>
+<p class="p1">const grid = document.getElementById('grid');</p>
+<p class="p1">films.forEach(f=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const cell = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cell.className = 'cell';</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cell.style.background = f.bg;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cell.style.color = f.fg;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cell.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img class="poster-img" src="poster-${f.n}.jpg" alt="" style="display:none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="title"&gt;${f.t}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="sub"&gt;${f.y}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>const img = cell.querySelector('.poster-img');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>img.onload = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>img.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>cell.classList.add('has-photo');</p>
+<p class="p1"><span class="Apple-converted-space">  </span>};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>img.onerror = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>img.remove();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>};</p>
+<p class="p1"><span class="Apple-converted-space">  </span>cell.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.open(</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'https://www.google.com/search?q=' + encodeURIComponent(`${f.t} ${f.y} where to watch`),</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'_blank',</p>
+<p class="p1"><span class="Apple-converted-space">      </span>'noopener'</p>
+<p class="p1"><span class="Apple-converted-space">    </span>);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>});</p>
+<p class="p1"><span class="Apple-converted-space">  </span>grid.appendChild(cell);</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
